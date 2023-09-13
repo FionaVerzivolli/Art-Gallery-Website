@@ -1,11 +1,12 @@
 html{
     scroll-behavior: smooth;
-    margin-top: 15px;
-}
+    margin-top: 1vw;
 
+}
 body{
     background: linear-gradient( #ffffff 0%, #aee2e8 100%);
-    font-size:25px;
+
+    font-size:2vw;
     margin:auto;
     padding-top:5%;
     padding-left: 20%;
@@ -22,33 +23,33 @@ h1, h2, h3, h4{
     color:#053B50;
     size:100%;
     animation: slideInLeft 1s ease;
-}
 
+}
 h2{
-    font-size: 30px;
+    font-size: 2.5vw;
 }
-
 p, .menu-item{
     color: #053B50;
+
     animation: slideInLeft 1.3s ease;
 }
-
 .menu{
     text-align: center;
     margin-left:-4%;
 }
-
 .menu-item{
     padding:1%;
-    font-size: 30px;
+    font-size: 2vw;
     display:inline;
     border:solid;
     border-color: #51a2c2;
-    border-width: 2px;
+    border-width: 0.5vw;
     background-color:#e6f2f4;
     cursor:pointer;
     transition: transform 0.2s linear;
-    border-radius: 10px; 
+    border-radius: 1vw;
+
+    
 }
 
 .menu-item:active{
@@ -58,13 +59,14 @@ p, .menu-item{
 }
 
 .menu-item:hover{
-    box-shadow: 0 14px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 1vw 1vw 0 rgba(0, 0, 0, 0.24), 0 1vw 1vw 0 rgba(0,0,0,0.19);
+
 }
 
 .bg-color{
     background-color: #80c3ca;
-    padding: 15px;
-    border-radius:15px;
+    padding: 1vw;
+    border-radius:1vw;
     line-height: 2;
     animation: slideInLeft 1s ease;
     width:100%;
@@ -86,6 +88,7 @@ p, .menu-item{
     }
 }
 
+
 *{
     font-family: 'Trebuchet MS', sans-serif;
 }
@@ -100,13 +103,14 @@ p, .menu-item{
 
 img{
     max-width: 80%;
+
 }
 
 .artcaption{
     display: flex;
     align-items: center;
     justify-content: center ;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .link{
