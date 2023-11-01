@@ -41,7 +41,7 @@ h1, h2, h3, h4, p {
 
 @keyframes slideInLeft {
     from {
-        transform: translateX(-100px);
+        transform: translateX(-300px);
         visibility: hidden;
     }
     to {
@@ -132,16 +132,6 @@ img {
     font-size: 1.5vw; 
 }
 
-
-/* Animation */
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-300px);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
 
 /* Initial state - hides text content */
 .hide-content {
