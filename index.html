@@ -5,25 +5,25 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="artwebsite.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
       <title id="title">Fiona's Art Gallery</title>
-      <div class="bg-color">
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="sidebar">
         <ul>
-        <div class="menu">
-          <a class="link" href="#Information">
-            <input type="button" value="Information"class="menu-item"></input>
-          </a>
-          <a class="link" href="#Traditional-Art">
-            <input type="button" value="Traditional Art" class="menu-item"></input>
-          </a>
-          <a class="link" href="#Digital-Art">
-            <input type="button" value="Digital Art" class="menu-item"></input>
-          </a>
-          <a class="link" href="#About-Me">
-            <input type="button" value="About Me" class="menu-item"></input>
-          </a>
-        </div>
+          <i class="menu-title">Menu</i>
+          <li><a class="sidebar-item-decoration" href="#Title"><i class="sidebar-item"></i>Top</a></li>
+          <li><a class="sidebar-item-decoration" href="#Information"><i class="sidebar-item"></i>Information</a></li>
+          <li><a class="sidebar-item-decoration" href="#Traditional-Art"><i class="sidebar-item"></i>Traditional</a></li>
+          <li><a class="sidebar-item-decoration" href="#Digital-Art"><i class="sidebar-item"></i>Digital</a></li>
+          <li><a class="sidebar-item-decoration" href="#About-Me"><i class="sidebar-item"></i>About Me</a></li>
+        </ul>
       </div>
-      <h1 class="title">  My Art Gallery  </h1>
+      <h1 id="Title" class="title">My Art Gallery</a></h1>
       <div class="bg-color">
         <p>Welcome to a collection of my art. Feel free to use the menu bar above to navigate.<br> I'm passionate about painting, sketching, and all things creative, so I made this site to share some of my works with you.</p>
       </div>
@@ -69,7 +69,7 @@
         <div class="container art-piece">
          <img src="cow.jpg"></img>
         </div>
-        <p class="artcaption"><i>Mr. Cow</i>, coloured pencil on paper</p>
+        <p class="artcaption"><i>Cow</i>, coloured pencil on paper</p>
         <div class="container art-piece">
           <img src="shark.jpg"></img>
          </div>
