@@ -1,12 +1,12 @@
 <!DOCTYPE html>
   <html lang="en">
     <main id="main">
+    <div class="preloader" id="preloader"></div>
     <body>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="artwebsite.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
       <title id="title">Fiona's Art Gallery</title>
       <input type="checkbox" id="check">
       <label for="check">
@@ -14,91 +14,99 @@
         <i class="fas fa-times" id="cancel"></i>
       </label>
       <div class="sidebar">
+        <h2 class="menu-title hide-content">Menu</h2>
         <ul>
-          <i class="menu-title">Menu</i>
           <li><a class="sidebar-item-decoration" href="#Title"><i class="sidebar-item"></i>Top</a></li>
           <li><a class="sidebar-item-decoration" href="#Information"><i class="sidebar-item"></i>Information</a></li>
           <li><a class="sidebar-item-decoration" href="#Traditional-Art"><i class="sidebar-item"></i>Traditional</a></li>
           <li><a class="sidebar-item-decoration" href="#Digital-Art"><i class="sidebar-item"></i>Digital</a></li>
           <li><a class="sidebar-item-decoration" href="#About-Me"><i class="sidebar-item"></i>About Me</a></li>
+          <li><a class="sidebar-item-decoration" href="#Contact-Me"><i class="sidebar-item"></i>Contact Me</a></li>
         </ul>
       </div>
-      <h1 id="Title" class="title">My Art Gallery</a></h1>
+      <h1 id="Title" class="title hide-content">My Art Gallery</a></h1>
       <div class="bg-color">
-        <p>Welcome to a collection of my art. Feel free to use the menu bar above to navigate.<br> I'm passionate about painting, sketching, and all things creative, so I made this site to share some of my works with you.</p>
+        <p class="hide-content">Welcome to a collection of my art. Feel free to use the menu bar above to navigate.<br> I'm passionate about painting, sketching, and all things creative, so I made this site to share some of my works with you.</p>
       </div>
         <div id="Information">
-          <h2> Information </h2>
+          <h2 class="hide-content"> Information </h2>
           <p></p>
 
-           <h3>Materials</h3>
+           <h3 class="hide-content">Materials</h3>
            <div class="bg-color">
-              <p>The mediums I mainly use are acryilic paint and watercolor paint, since I'm the most comfortable with them. <br>Although I'd love to experiment with oils more, I unfortunately do not have a ventilated workspace, and due to health hazards, this prevents me from using oil paint. <br> For sketching and drawing, I use prismacolor pencils.<br>My other supplies include dollar brand and Artist's Loft canvases and Sable watercolor brushes.<br>For digital art, I use Procreate, and I use the default soft blend brush for every single piece.</p>
+              <p class='hide-content'>The mediums I mainly use are acryilic paint and watercolor paint, since I'm the most comfortable with them. <br>Although I'd love to experiment with oils more, I unfortunately do not have a ventilated workspace, and due to health hazards, this prevents me from using oil paint. <br> For sketching and drawing, I use prismacolor pencils.<br>My other supplies include dollar brand and Artist's Loft canvases and Sable watercolor brushes.<br>For digital art, I use Procreate, and I use the default soft blend brush for every single piece.</p>
             </div>
-            <h3 >Time</h3>
+            <h3 class="hide-content">Time</h3>
             <div class="bg-color">
-              <p>The length of time it takes me to finish a painting depends on what I am creating and its size. My smaller paintings take me 1-2 hours,  but my larger ones might take me a few days. If I am really stuck on a painting, I work on it for roughly an hour, then resume the next day to get a fresh perspective.</p>
+              <p class="hide-content">The length of time it takes me to finish a painting depends on what I am creating and its size. My smaller paintings take me 1-2 hours,  but my larger ones might take me a few days. If I am really stuck on a painting, I work on it for roughly an hour, then resume the next day to get a fresh perspective.</p>
             </div>
-            <h3>References</h3>
+            <h3 class="hide-content">References</h3>
             <div class="bg-color">
-             <p>I get my inspiration from Pinterest, and to practice drawing I use some of the pictures on my feed as a reference. This helps motivate me if I'm in an art block. My favourite things to draw include animals, plants and food.</p>
+             <p class="hide-content">I get my inspiration from Pinterest, and to practice drawing I use some of the pictures on my feed as a reference. This helps motivate me if I'm in an art block. My favourite things to draw include animals, plants and food.</p>
             </div>
           </div>
         
-        <h1 class="title"> Art Pieces </h1>
+        <h1 class="title hide-content"> Art Pieces </h1>
         <div class="artgallery">
           <div id="Traditional-Art">
-            <h2>Traditional Art</h2>
+            <h2 class="hide-content">Traditional Art</h2>
         <div class="container art-piece">
           <img src="pufferfish.jpg"></img>
         </div>
-        <p class="artcaption"><i>Pufferfish</i>, watercolor and gouache on paper</p>
+        <p class="artcaption hide-content"><i>Pufferfish</i>, watercolor and gouache on paper</p>
         <div class="container art-piece">
          <img src="hands.png"></img>
         </div>
         </div>
-        <p class="artcaption"><i>Pinkie Promise</i>, watercolor on paper, reference unknown</p>
+        <p class="artcaption hide-content"><i>Pinkie Promise</i>, watercolor on paper, reference unknown</p>
         <div class="container art-piece">
          <img src="fruits.png"></img>
         </div>
-        <p class="artcaption"><i>Fruits</i>, acrylic on canvas</p>
+        <p class="artcaption hide-content"><i>Fruits</i>, acrylic on canvas</p>
         <div class="container art-piece">
          <img src="fish.jpg"></img>
         </div>
-        <p class="artcaption"><i>Goldie</i>, coloured pencil on paper</p>
+        <p class="artcaption hide-content"><i>Goldie</i>, coloured pencil on paper</p>
         <div class="container art-piece">
          <img src="cow.jpg"></img>
         </div>
-        <p class="artcaption"><i>Cow</i>, coloured pencil on paper</p>
+        <p class="artcaption hide-content"><i>Cow</i>, coloured pencil on paper</p>
         <div class="container art-piece">
           <img src="shark.jpg"></img>
          </div>
-         <p class="artcaption"><i>Shark</i>, watercolor on paper</p>
+         <p class="artcaption hide-content"><i>Shark</i>, watercolor on paper</p>
          <div class="container art-piece">
          <img src="flowers.jpg"></img>
         </div>
-        <p class="artcaption"><i>Floral</i>, watercolor on paper</p>
+        <p class="artcaption hide-content"><i>Floral</i>, watercolor on paper</p>
                 
-          <h2>Digital Art</h2>
+          <h2 class="hide-content">Digital Art</h2>
           <div id="Digital-Art">
           <div class="container art-piece">
             <img src="crab.png"></img>
           </div>
-        <p class="artcaption"><i>Home Is Wherever I Go</i>, digital</p>
+        <p class="artcaption hide-content"><i>Home Is Wherever I Go</i>, digital</p>
         <div class="container art-piece">
          <img src="woman.png"></img>
         </div>
-        <p class="artcaption"><i>The Woman</i>, digital</p>
+        <p class="artcaption hide-content"><i>The Woman</i>, digital</p>
       <div id="About-Me">
-        <h1> About Me </h1>
+        <h1 class="hide-content"> About Me </h1>
        <div class="bg-color">
-        <p>My name is Fiona and I am currently a first year student studying Computer Science at the University of Toronto. My passions include programming and art (you can probably tell from this website haha). I grew up in Toronto, and my favourite places have got to be the lake by Humber Bay and Union Station, and Toronto Reference Library. When I move out, I really want to adopt a pet. Samoyeds, teacup pomeranians, and tabby cats have my attention. While I'm not drawing, coding, or going out with friends, you might catch me playing League of Legends and doing what my team calls "inting." I find that making projects like this website is super fun and exciting. Who knows, you might hear of another website by me soon...</p>
+        <p class="hide-content">My name is Fiona and I am currently a first year student studying Computer Science at the University of Toronto. My passions include programming and art (you can probably tell from this website haha). I grew up in Toronto, and my favourite places have got to be the lake by Humber Bay and Union Station, and Toronto Reference Library. When I move out, I really want to adopt a pet. Samoyeds, teacup pomeranians, and tabby cats have my attention. While I'm not drawing, coding, or going out with friends, you might catch me playing League of Legends and doing what my team calls "inting." I find that making projects like this website is super fun and exciting. Who knows, you might hear of another website by me soon...</p>
         </div>
       </div>
       </div>
-
+      <h2 id="Contact-Me" class = "contact hide-content">Contact me here!</h2>
+      <div class="additional">
+        <p class="socials hide-content"><a href="www.linkedin.com/in/fiona-verzivolli" target="_blank">LinkedIn</a></p>
+        <p class="socials hide-content"><a href="https://www.instagram.com/fionaverzivolli/" target="_blank">Instagram</a></p>
+        <p class="socials hide-content"><a href="https://github.com/FionaVerzivolli" target="_blank">GitHub</a></p>
+        <p class="hide-content"> Or, email me at fiona.verzivolli@gmail.com</p>
+      </div>
             <footer>
-                <p class="artcaption">Thanks for checking out my website!</p>
+                <p class="artcaption hide-content">Thanks for checking out my website!</p>
+    <script src="artwebsite.js" defer></script>
     </body>
     </main>
   </html>
