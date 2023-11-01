@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: linear-gradient(#ffffff 0%, #aee2e8 100%);
+    background: linear-gradient(#ffffff 0%, #F6635C 100%);
     font-size: 2vw;
     margin: auto;
     padding: 5% 20%;
@@ -22,18 +22,34 @@ h1, h2, h3, h4 {
     margin: auto;
     text-align: center;
     padding: 2%;
-    color: #053B50;
-    animation: slideInLeft 1s ease;
 }
 
 h2 {
     font-size: 2.5vw;
 }
 
-p {
-    color: #053B50;
-    animation: slideInLeft 1.3s ease;
+h1, h2, h3, h4, p {
+    color: #79155B;
+    animation: slideInLeft 2s ease;
+    opacity: 0;
 }
+
+.delayed-animation {
+    animation: slideInLeft 2s ease;
+    visibility: visible !important;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        visibility: hidden;
+    }
+    to {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
 
 /* Sidebar Styles */
 .sidebar {
@@ -43,31 +59,28 @@ p {
     left: -16.5vw;
     width: 16.5vw; 
     height: 100%;
-    background: #479ea8;
+    background: #C23373;
     transition: all .6s ease;
 }
 
-.menu {
-    text-align: center;
-    margin-left: -3.5vw; 
-    padding: 0;
-}
 
 .menu-item {
     padding: 0;
     font-size: 1.5vw; 
     display: inline;
     border: 0.5vw solid; 
-    border-color: #51a2c2;
-    background-color: #e6f2f4;
+    border-color: #a3183b;
+    background-color: #F6635C;
     cursor: pointer;
     transition: transform 0.2s linear;
     box-sizing: border-box;
 }
 
 .menu-title {
-    font-size: 2.5vw;
+    font-size: 2.6vw;
     margin-left: 0;
+    color: #380511;
+    margin-top:1vw;
     text-align: center;
 }
 
@@ -76,11 +89,11 @@ p {
     height: 100%;
     width: 100%;
     line-height: 6.5vw; 
-    color: #b9d8e3;
+    color: #ffffff;
     padding-left: 0.5vw; 
     box-sizing: border-box;
     border-top: 0.2vw solid rgba(255, 255, 255, 0.1);
-    border-bottom: 0.2vw solid rgb(19, 109, 121);
+    border-bottom: 0.2vw solid rgb(255, 255, 255);
     transition: 0.3s;
 }
 
@@ -90,11 +103,11 @@ ul li:hover a {
 
 /* Other Sections and Art Pieces Styles */
 .bg-color {
-    background-color: #80c3ca;
+    background-color: #FFBA86;
     padding: 1vw;
     border-radius: 1vw;
     line-height: 2;
-    animation: slideInLeft 1s ease;
+    animation: slideInLeft 4s ease;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -123,12 +136,26 @@ img {
 /* Animation */
 @keyframes slideInLeft {
     from {
-        transform: translateX(-100px);
+        transform: translateX(-300px);
     }
     to {
         transform: translateX(0);
     }
 }
+
+/* Initial state - hides text content */
+.hide-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 4s, opacity 1s 4s;
+}
+
+.show-content {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1s ease;
+}
+
 
 /* Sidebar Toggle */
 #check {
@@ -139,7 +166,7 @@ label #btn,
 label #cancel {
     position: absolute;
     cursor: pointer;
-    background-color: #51b3c2;
+    background-color: #FFBA86;
     border-radius: 0.5vw; 
     position: fixed;
 }
@@ -148,7 +175,7 @@ label #btn {
     top: 0.5vw;
     left: 0.5vw; 
     font-size: 3.5vw;
-    color: black;
+    color: #79155B;
     padding: 0.5vw; 
     transition: all .6s ease;
 }
@@ -158,7 +185,7 @@ label #cancel {
     left: -16vw;
     top: 0.5vw; 
     font-size: 2vw; 
-    color: #053B50;
+    color: #79155B;
     padding: 1vw;
     transition: all .6s ease;
 }
@@ -176,3 +203,70 @@ label #cancel {
 #check:checked ~ label #cancel {
     left: 17.5vw;
 }
+
+/* Contact Information */
+.additional{
+    width: 100%;
+    margin-top: 2vw;
+    padding: .6vw;
+    text-align: center;
+    height: 16vw;
+    background-color: #FFBA86;
+    border-radius: 1vw;
+    display:block
+}
+
+.socials{
+    color: #C23373;
+    display:inline-block;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #3A589E; 
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #8F4DB7; 
+}
+
+.contact{
+    padding-top: 6vw;
+    color: #79155B;
+    font-size: 4vw;
+}
+
+.socials:active {
+    color: #79155B;
+}
+
+.socials:hover{
+    color: #79155B;
+}
+
+/*Preloader*/
+.preloader {
+    top: 0;
+    left: 0;
+    background: #FFBA86;
+    background-image: url("loading_screen.gif"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%; 
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+
+/*
+Colour palette:
+https://colorhunt.co/palette/79155bc23373f6635cffba86
+*/
+
