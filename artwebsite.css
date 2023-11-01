@@ -145,6 +145,7 @@ label #cancel {
 }
 
 label #btn {
+    top: 0.5vw;
     left: 0.5vw; 
     font-size: 3.5vw;
     color: black;
